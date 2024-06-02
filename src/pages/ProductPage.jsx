@@ -24,7 +24,7 @@ const ProductPage = () => {
         type: "SHOW_LOADING",
       });
       const { data } = await axios.get(
-        `https://inv-app-backend.onrender.com/api/products/getProducts`
+        `https://env-app-backend.onrender.com/api/products/getProducts`
       );
       setProductsData(data);
       dispatch({ type: "HIDE_LOADING" });
@@ -49,7 +49,7 @@ const ProductPage = () => {
         type: "SHOW_LOADING",
       });
       await axios.post(
-        "https://inv-app-backend.onrender.com/api/products/deleteProduct",
+        "https://env-app-backend.onrender.com/api/products/deleteProduct",
         { itemId: record._id }
       );
       message.success("Item Deleted Succesfully");
@@ -127,7 +127,7 @@ const ProductPage = () => {
           type: "SHOW_LOADING",
         });
         await axios.post(
-          `https://inv-app-backend.onrender.com/api/products/addProduct`,
+          `https://env-app-backend.onrender.com/api/products/addProduct`,
           value
         );
 
@@ -147,7 +147,7 @@ const ProductPage = () => {
         });
         console.log("done1111");
         await axios.put(
-          "https://inv-app-backend.onrender.com/api/products/editProduct",
+          "https://env-app-backend.onrender.com/api/products/editProduct",
           {
             ...value,
             itemId: editItem._id,

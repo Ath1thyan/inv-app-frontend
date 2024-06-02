@@ -113,7 +113,7 @@ const CartPage = () => {
       };
       // console.log(newObject);
       await axios.post(
-        `https://inv-app-backend.onrender.com/api/bills/add-bills`,
+        `https://env-app-backend.onrender.com/api/bills/add-bills`,
         newObject
       );
       message.success("Bill Generated");

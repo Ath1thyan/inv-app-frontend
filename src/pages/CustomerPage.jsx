@@ -12,7 +12,7 @@ const CutomerPage = () => {
         type: "SHOW_LOADING",
       });
       const { data } = await axios.get(
-        `https://inv-app-backend.onrender.com/api/bills/get-bills`
+        `https://env-app-backend.onrender.com/api/bills/get-bills`
       );
       setBillsData(data);
       dispatch({ type: "HIDE_LOADING" });

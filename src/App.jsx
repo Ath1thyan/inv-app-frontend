@@ -9,8 +9,6 @@ import Login from "./pages/Login";
 import CustomerPage from "./pages/CustomerPage";
 import BillsPage from "./pages/BillsPage";
 
-// axios.defaults.baseURL = "https://inv-app-backend.onrender.com";
-// axios.defaults.withCredentials = true;
 
 function App() {
   return (

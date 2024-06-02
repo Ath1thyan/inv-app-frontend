@@ -41,7 +41,7 @@ const Homepage = () => {
           type: "SHOW_LOADING",
         });
         const { data } = await axios.get(
-          "https://inv-app-backend.onrender.com/api/products/getProducts"
+          "https://env-app-backend.onrender.com/api/products/getProducts"
         );
         setProductsData(data);
         dispatch({ type: "HIDE_LOADING" });

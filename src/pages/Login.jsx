@@ -15,7 +15,7 @@ const Login = () => {
         type: "SHOW_LOADING",
       });
       const res = await axios.post(
-        `https://inv-app-backend.onrender.com/api/users/login`,
+        `https://env-app-backend.onrender.com/api/users/login`,
         value
       );
       dispatch({ type: "HIDE_LOADING" });

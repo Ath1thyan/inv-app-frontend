@@ -15,7 +15,7 @@ const Register = () => {
         type: "SHOW_LOADING",
       });
       await axios.post(
-        `https://inv-app-backend.onrender.com/api/users/register`,
+        `https://env-app-backend.onrender.com/api/users/register`,
         value
       );
       message.success("Register Succesfully");
